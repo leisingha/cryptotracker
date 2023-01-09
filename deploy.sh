@@ -3,8 +3,12 @@
 set -e
 # build
 npm run build
+# navigate into backend directory
+cd backend
+# connect to database
+node app.js
 # navigate into the build output directory
-cd dist
+cd ../dist
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 git init
